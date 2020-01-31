@@ -14,7 +14,7 @@ You can buy a Raspberry Pi 4 full kit from Amazon.com for $80-$100
 After you buy your Raspberry Pi you need to install OS on the SD Card.
 
 Go to
-  * https://www.raspberrypi.org/downloads/
+  * [Raspberry Pi](https://www.raspberrypi.org/downloads/)
 
 Choose between Noobs or Raspbian 
 
@@ -40,6 +40,6 @@ Choose your download method:
 
 To install OS on the SD Card we need a software called *balenaEtcher*
 
- * You can download it from [a link](https://www.balena.io/etcher/)
+ * You can download it from [balenaEtcher](https://www.balena.io/etcher/)
 
 * Install *balenaEtcher*
