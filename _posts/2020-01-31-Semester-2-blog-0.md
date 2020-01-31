@@ -18,16 +18,16 @@ Go to
 
 Choose between Noobs or Raspbian 
 
-If you choose Noobs, you get the following 2 choices:
+If you choose **Noobs**, you get the following 2 choices:
 
-  * NOOBS Lite
+    * NOOBS Lite
   
-  * NOOBS
+    * NOOBS
 
-If you choose Raspbian, you get the following 3 choices:
+If you choose **Raspbian**, you get the following 3 choices:
 
-  * Raspbian Buster Lite
+    * Raspbian Buster Lite
 
-  * Raspbian Buster with desktop
+    * Raspbian Buster with desktop
 
-  * Raspbian Buster with desktop and recommended software
+    * Raspbian Buster with desktop and recommended software
