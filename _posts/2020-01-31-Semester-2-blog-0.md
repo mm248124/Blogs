@@ -40,6 +40,6 @@ Choose your download method:
 
 To install OS on the SD Card we need a software called *balenaEtcher*
 
- * You can download it from https://www.balena.io/etcher/
+ * You can download it from [a link](https://www.balena.io/etcher/)
 
 * Install *balenaEtcher*
