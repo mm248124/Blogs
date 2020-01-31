@@ -9,8 +9,25 @@ redirect_from:
 ---
 __Let's talk about Raspberry Pi__
 
-You can buy a Raspberry Pi 4 kit from Amazon.com for $80-$100
+You can buy a Raspberry Pi 4 full kit from Amazon.com for $80-$100
 
-https://www.amazon.com/CanaKit-Raspberry-4GB-Starter-Kit/dp/B07V5JTMV9/ref=sr_1_1_sspa?keywords=raspberry+pi+4&qid=1580494219&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyS0RLUDBOUUFTTDZUJmVuY3J5cHRlZElkPUEwNDk2NDQ4MU5XMkJTTjcxWjJTSiZlbmNyeXB0ZWRBZElkPUEwNjQwMzU0MzNDMjdCTENJQlUwQSZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=
+After you buy your Raspberry Pi you need to install OS on the SD Card.
 
+Go to
+  * https://www.raspberrypi.org/downloads/
 
+Choose between Noobs or Raspbian 
+
+If you choose Noobs, you get the following 2 choices:
+
+  * NOOBS Lite
+  
+  * NOOBS
+
+  If you choose Raspbian, you get the following 3 choices:
+
+    * Raspbian Buster Lite
+
+    * Raspbian Buster with desktop
+
+    * Raspbian Buster with desktop and recommended software
