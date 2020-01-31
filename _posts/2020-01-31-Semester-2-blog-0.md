@@ -18,16 +18,28 @@ Go to
 
 Choose between Noobs or Raspbian 
 
-If you choose **Noobs**, you get the following 2 choices:
+If you choose *Noobs*, you get the following 2 choices:
 
     * NOOBS Lite
   
     * NOOBS
 
-If you choose **Raspbian**, you get the following 3 choices:
+If you choose *Raspbian*, you get the following 3 choices:
 
     * Raspbian Buster Lite
 
     * Raspbian Buster with desktop
 
     * Raspbian Buster with desktop and recommended software
+
+Choose your download method:
+
+    * ZIP
+
+    * Torrent
+
+To install OS on the SD Card we need a software called *balenaEtcher*
+
+ * You can download it from https://www.balena.io/etcher/
+
+* Install *balenaEtcher*
