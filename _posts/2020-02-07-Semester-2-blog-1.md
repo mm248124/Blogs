@@ -17,11 +17,13 @@ Setup Static IP on your Raspberry PI.
 
   * sudo nano /etc/dhcpcd.conf 
 
-  Uncomment and set the following:
+  * Uncomment and set the following:
 
     * interface eth0
     * static ip_address=192.168.1.15    # your IP instead
     * static routers=192.168.1.1        # your router IP
+  
+  * Reboot Raspberry Pi
 
 Open Terminal
 
@@ -39,11 +41,11 @@ Open Terminal
 
     * Go with default options or change as needed.
 
-  Pay attention as it will provide temp Password to access Admin Web Page
+  __Pay attention as it will provide temp Password to access Admin Web Page__
 
-* Open Web Browser
+Open Web Browser
 
-  * "your_Pi_Hole_IP/admin"
+  * "your_Pi_Hole_IP"/admin
 
   * Login using temp Password
 
