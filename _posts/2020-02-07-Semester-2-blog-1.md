@@ -30,6 +30,7 @@ Open Terminal
     * sudo apt-get install curl
 
   * Install Pi hole
+  
     curl -sSL https://install.pi-hole.net | bash
 
   * Follow the instructions on the screen
