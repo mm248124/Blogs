@@ -41,5 +41,19 @@ Open Terminal
 
   Pay attention as it will provide temp Password to access Admin Web Page
 
+* Open Web Browser
+
+  * "your_Pi_Hole_IP/admin"
+
+  * Login using temp Password
+
+Change Admin Web Page Password
+  
+  * Open terminal
+
+    * sudo pihole -a -p
+
+  Change your home router to use the static IP of your Raspberry PI as Primary DNS Server
+
 
 
