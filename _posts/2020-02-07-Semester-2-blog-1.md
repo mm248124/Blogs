@@ -25,15 +25,15 @@ Setup Static IP on your Raspberry PI.
 
 Open Terminal
 
-  Install curl if required
+  * Install curl if required
 
     * sudo apt-get install curl
 
-  Install Pi hole
+  * Install Pi hole
 
     * curl -sSL https://install.pi-hole.net | bash
 
-  Follow the instructions on the screen
+  * Follow the instructions on the screen
 
     * Select Upstream DNS Provider
 
