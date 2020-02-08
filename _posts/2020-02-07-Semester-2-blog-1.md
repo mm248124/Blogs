@@ -23,7 +23,23 @@ Setup Static IP on your Raspberry PI.
     * static ip_address=192.168.1.15    # your IP instead
     * static routers=192.168.1.1        # your router IP
 
-    
+Open Terminal
+
+  Install curl if required
+
+    * sudo apt-get install curl
+
+  Install Pi hole
+
+    * curl -sSL https://install.pi-hole.net | bash
+
+  Follow the instructions on the screen
+
+    * Select Upstream DNS Provider
+
+    * Go with default options or change as needed.
+
+  Pay attention as it will provide temp Password to access Admin Web Page
 
 
 
