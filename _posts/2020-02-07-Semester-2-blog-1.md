@@ -20,8 +20,8 @@ Setup Static IP on your Raspberry PI.
   * Uncomment and set the following:
 
     * interface eth0
-    * static ip_address=192.168.1.15    # your IP instead
-    * static routers=192.168.1.1        # your router IP
+    * static ip_address=192.168.1.15    __# your IP instead__
+    * static routers=192.168.1.1        __# your router IP__
   
   * Reboot Raspberry Pi
 
