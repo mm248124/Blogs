@@ -21,7 +21,7 @@ __Installing cloudflared__
 
     ## AMD64 architecture
 
-      ### For Debian/Ubuntu
+      ***For Debian/Ubuntu***
 
         * wget https://bin.equinox.io/c/VdrWdbjqyF/cloudflared-stable-linux-amd64.deb
 
@@ -29,7 +29,7 @@ __Installing cloudflared__
       
         * cloudflared -v
 
-      ### For CentOS/RHEL/Fedora
+      ***For CentOS/RHEL/Fedora***
 
         * wget https://bin.equinox.io/c/VdrWdbjqyF/cloudflared-stable-linux-amd64.rpm
 
@@ -71,7 +71,6 @@ __Installing cloudflared__
       After=syslog.target network-online.target
 
 
-
       [Service]
 
       Type=simple
@@ -89,7 +88,6 @@ __Installing cloudflared__
       KillMode=process
 
 
-
       [Install]
 
       WantedBy=multi-user.target
@@ -102,5 +100,5 @@ __Installing cloudflared__
 
     ## Finally, configure Pi-hole to use the local cloudflared service as the upstream DNS server:
 
-
+      ![DNS Settings ](https://mm248124.github.io/Blogs/assets/images/screenshots/pi_hole_dns.jpg)  
 
