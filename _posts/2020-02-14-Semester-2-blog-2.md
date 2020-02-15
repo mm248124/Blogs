@@ -70,6 +70,7 @@ __Installing cloudflared__
 
       After=syslog.target network-online.target
 
+
       [Service]
 
       Type=simple
@@ -86,8 +87,9 @@ __Installing cloudflared__
 
       KillMode=process
 
+
       [Install]
-      
+
       WantedBy=multi-user.target
 
     ## Enable the systemd service to run on startup, then start the service and check its status:
