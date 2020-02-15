@@ -36,6 +36,7 @@ __Installing cloudflared__
         * sudo yum install ./cloudflared-stable-linux-amd64.rpm
 
         * cloudflared -v
+        
     ## ARM architecture (Raspberry Pi)
 
       * wget https://bin.equinox.io/c/VdrWdbjqyF/cloudflared-stable-linux-arm.tgz
