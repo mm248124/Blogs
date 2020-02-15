@@ -19,19 +19,74 @@ __Installing cloudflared__
 
   * Open Terminal
 
-    #### For Debian/Ubuntu
+    ## AMD64 architecture
 
-      * wget https://bin.equinox.io/c/VdrWdbjqyF/cloudflared-stable-linux-amd64.deb
+      #### For Debian/Ubuntu
 
-      * sudo apt-get install ./cloudflared-stable-linux-amd64.deb
+        * wget https://bin.equinox.io/c/VdrWdbjqyF/cloudflared-stable-linux-amd64.deb
+
+        * sudo apt-get install ./cloudflared-stable-linux-amd64.deb
+      
+        * cloudflared -v
+
+      #### For CentOS/RHEL/Fedora
+
+        * wget https://bin.equinox.io/c/VdrWdbjqyF/cloudflared-stable-linux-amd64.rpm
+
+        * sudo yum install ./cloudflared-stable-linux-amd64.rpm
+
+        * cloudflared -v
+    ## ARM architecture (Raspberry Pi)
+
+      * wget https://bin.equinox.io/c/VdrWdbjqyF/cloudflared-stable-linux-arm.tgz
+
+      * tar -xvzf cloudflared-stable-linux-arm.tgz
+
+      * sudo cp ./cloudflared /usr/local/bin
+
+      * sudo chmod +x /usr/local/bin/cloudflared
+
+      * cloudflared -v
+
+    ## Configure cloudflared to run on startup
+
+      * sudo useradd -s /usr/sbin/nologin -r -M cloudflared
+
+      ## Copy below 2 lines to the /etc/default/cloudflared file
+
+        #Commandline args for cloudflared
+        CLOUDFLARED_OPTS=--port 5053 --upstream https://1.1.1.1/dns-query --upstream https://1.0.0.1/dns-query
     
-      * cloudflared -v
+    ## Update the permissions for cloudflared
 
-    #### For CentOS/RHEL/Fedora
+      * sudo chown cloudflared:cloudflared /etc/default/cloudflared
+      * sudo chown cloudflared:cloudflared /usr/local/bin/cloudflared
 
-      * wget https://bin.equinox.io/c/VdrWdbjqyF/cloudflared-stable-linux-amd64.rpm
+    ## Copy below code to /etc/systemd/system/cloudflared.service
 
-      * sudo yum install ./cloudflared-stable-linux-amd64.rpm
+      [Unit]
+      Description=cloudflared DNS over HTTPS proxy
+      After=syslog.target network-online.target
 
-      * cloudflared -v
+      [Service]
+      Type=simple
+      User=cloudflared
+      EnvironmentFile=/etc/default/cloudflared
+      ExecStart=/usr/local/bin/cloudflared proxy-dns $CLOUDFLARED_OPTS
+      Restart=on-failure
+      RestartSec=10
+      KillMode=process
+
+      [Install]
+      WantedBy=multi-user.target
+
+    ## Enable the systemd service to run on startup, then start the service and check its status:
+
+      * sudo systemctl enable cloudflared
+      * sudo systemctl start cloudflared
+      * sudo systemctl status cloudflared  
+
+    ## Finally, configure Pi-hole to use the local cloudflared service as the upstream DNS server:
+
+
 
