@@ -65,19 +65,29 @@ __Installing cloudflared__
     ## Copy below code to /etc/systemd/system/cloudflared.service
 
       [Unit]
+
       Description=cloudflared DNS over HTTPS proxy
+
       After=syslog.target network-online.target
 
       [Service]
+
       Type=simple
+
       User=cloudflared
+
       EnvironmentFile=/etc/default/cloudflared
+
       ExecStart=/usr/local/bin/cloudflared proxy-dns $CLOUDFLARED_OPTS
+
       Restart=on-failure
+
       RestartSec=10
+
       KillMode=process
 
       [Install]
+      
       WantedBy=multi-user.target
 
     ## Enable the systemd service to run on startup, then start the service and check its status:
