@@ -36,7 +36,7 @@ __Installing cloudflared__
         * sudo yum install ./cloudflared-stable-linux-amd64.rpm
 
         * cloudflared -v
-        
+
     ## ARM architecture (Raspberry Pi)
 
       * wget https://bin.equinox.io/c/VdrWdbjqyF/cloudflared-stable-linux-arm.tgz
@@ -53,10 +53,11 @@ __Installing cloudflared__
 
       * sudo useradd -s /usr/sbin/nologin -r -M cloudflared
 
-      ## Copy below 2 lines to the /etc/default/cloudflared file
+    ## Copy below 2 lines to the /etc/default/cloudflared file
 
-        #Commandline args for cloudflared
-        CLOUDFLARED_OPTS=--port 5053 --upstream https://1.1.1.1/dns-query --upstream https://1.0.0.1/dns-query
+      #Commandline args for cloudflared
+
+      CLOUDFLARED_OPTS=--port 5053 --upstream https://1.1.1.1/dns-query --upstream https://1.0.0.1/dns-query
     
     ## Update the permissions for cloudflared
 
