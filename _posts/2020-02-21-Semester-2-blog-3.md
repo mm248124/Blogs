@@ -23,7 +23,7 @@ __Installing cloudflared__
 
     * sudo apt-get upgrade
     
-    * curl -L https://install.pivpn.io | bash
+    * curl -L https://install.pivpn.io \| bash
 
     * Follow the prompt
 
