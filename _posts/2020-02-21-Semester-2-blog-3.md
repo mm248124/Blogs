@@ -15,7 +15,7 @@ __Raspberry Pi VPN__
 
 *A Virtual Private Network provides you with two major features: Encryption & Authentication*
 
-__Installing OpenVPN_
+__Installing OpenVPN__
 
   * Open Terminal
 
