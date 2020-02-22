@@ -15,7 +15,7 @@ __Raspberry Pi VPN__
 
 *A Virtual Private Network provides you with two major features: Encryption & Authentication*
 
-__Installing cloudflared__
+__Installing OpenVPN_
 
   * Open Terminal
 
@@ -43,7 +43,7 @@ __Installing cloudflared__
 
     * Reboot
 
-   ### Setup your Client
+   __Setup your Client__
 
   * Open Terminal
 
@@ -53,11 +53,11 @@ __Installing cloudflared__
 
     * Provide username
 
-  ### Port Forwarding
+  __Port Forwarding__
 
     * Enable Port forwarding on your Router to IP and Port that you configured.
 
-  ### Connecting to the VPN
+  __Connecting to the VPN__
 
     * Install OpenVPN Client on your device
 
