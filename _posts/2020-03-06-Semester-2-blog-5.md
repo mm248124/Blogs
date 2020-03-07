@@ -33,11 +33,11 @@ redirect_from:
       
       openssl req -new -x509 -key /root/ca/private/cakey.pem  -out cacert.pem -days 3650
 
-  # Change directory permissions 
+  __Change directory permissions__
       
       chmod 600 -R /root/ca
 
-  # Edit openssl.cnf
+  __Edit openssl.cnf__
 
       vi /usr/lib/ssl/openssl.cnf
 
@@ -45,13 +45,13 @@ redirect_from:
 
          * Change to "dir                                     = /root/vpnCA"
 
-  # Create Private Key & Certificate for server
+  __Create Private Key & Certificate for server__
       
       cd /root/ca/requests/
       
       openssl genrsa -aes256 -out webserver.pem 2048
 
-  # Request CA Authority to sign webserver certificate
+  __Request CA Authority to sign webserver certificate__
       
       openssl req -new -key webserver.pem -out webserver.csr
 
@@ -59,12 +59,12 @@ redirect_from:
       
       openssl ca -in webserver.csr -out webserver.crt
 
-  # Copy Signed Cert to certificate directory
+  __Copy Signed Cert to certificate directory__
       
       cp webserver.crt /root/ca/certs/
 
 
-  # Edit nginx to use Certificate
+  __Edit nginx to use Certificate__
 
     # /etc/nginx/sites-available/default
 
