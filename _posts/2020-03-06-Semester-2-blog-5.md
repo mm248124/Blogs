@@ -8,26 +8,26 @@ redirect_from:
   - /2020/03/06/
 ---
 
-__Setup OpenSSL__
+## Setup OpenSSL
 
 
-  # Create main directory
+  __Create main directory__
       
       mkdir /root/ca
       
       cd /root/ca/
 
-  # Create sub directories
+  __Create sub directories__
       
       mkdir certs crl newcerts private request requests
 
-  # Create File
+  __Create File__
       
       touch index.txt
       
       echo '1234' > serial
 
-  # Generate Private Key & Certificate for CA Authority
+  __Generate Private Key & Certificate for CA Authority__
       
       openssl genrsa -aes256 -out private/cakey.pem 4096
       
@@ -38,7 +38,7 @@ __Setup OpenSSL__
       chmod 600 -R /root/ca
 
   # Edit openssl.cnf
-  
+
       vi /usr/lib/ssl/openssl.cnf
 
         #Set root directory to /root/ca
@@ -55,7 +55,7 @@ __Setup OpenSSL__
       
       openssl req -new -key webserver.pem -out webserver.csr
 
-  # Request CA Authority to sign Certificate | webserver.csr is just cert, webserver.crt is signed cert.
+  __Request CA Authority to sign Certificate \| webserver.csr is just cert, webserver.crt is signed cert__
       
       openssl ca -in webserver.csr -out webserver.crt
 
