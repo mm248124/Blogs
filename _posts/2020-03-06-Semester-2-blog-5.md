@@ -99,7 +99,6 @@ redirect_from:
             
               ssl_password_file /etc/nginx/certs/password.pass;
 
-
-  }
+    }
 
   
