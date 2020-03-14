@@ -37,9 +37,10 @@ redirect_from:
         Default Password : openmediavault
 
   __Configure OpenMediaVault__
+
         #Change Auto logout to Disabled.
 
-            Go to *General Settings* > *Web Administration*
+            Go to *General Settings* > "Web Administration"
             
                 change *Session timeout* to 0
 
