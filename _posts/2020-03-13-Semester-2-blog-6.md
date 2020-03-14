@@ -38,15 +38,10 @@ redirect_from:
 
   __Configure OpenMediaVault__
         #Firstly, you need to change Auto logout to Disabled.
-
             Go to *General Settings* > 
-            
                 *Web Administration* > change *Session timeout* to 0
-
                     Click *Save* > *Apply*
-
                 *Web Administrator Password*
-
                     Type in new Password
             
 
