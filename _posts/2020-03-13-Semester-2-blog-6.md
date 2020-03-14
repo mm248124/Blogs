@@ -37,18 +37,106 @@ redirect_from:
         Default Password : openmediavault
 
   __Configure OpenMediaVault__
-        #Firstly, you need to change Auto logout to Disabled.
-            Go to *General Settings* > 
-                *Web Administration* > change *Session timeout* to 0
-                    Click *Save* > *Apply*
-                *Web Administrator Password*
-                    Type in new Password
+        #Change Auto logout to Disabled.
+
+            Go to *General Settings* > *Web Administration*
             
+                change *Session timeout* to 0
 
+                    Click *Save* > *Apply*
+    
+        #Change the Web Administrative Password to a strong password.
 
+            Go to *General Settings* > *Web Administrator Password*
 
-Secondly, change the Web Administrative Password to a strong password of your choice.
+                Type in new Password
 
-Thirdly, navigate to system > Network and add a Ethernet interface.
-Under General settings, we need to select our eth0 Ethernet Interface.
-After that under IPv4, we need to select DHCP and save the configuration.
+                Click *Save* > *Apply*
+
+        #add a Ethernet interface.
+
+            Go to *Network* > *Interfaces*
+
+                *Add* > *Ethernet* 
+
+                    Select your device interface
+
+                    For IPv4 select *DHCP*
+
+                    Click *Save* > *Apply*
+
+        #Updates
+
+            Go to *Update Management*
+
+                Select All packages 
+
+                    Upgrade/Install
+
+        #Format Disk
+
+            Connect your USB hard drive to Raspberry Pi
+
+            Go to *Disks*
+
+                Click Scan
+
+                Once Scan finds your disk, select that disk then click *Wipe*
+
+        #Create and attach Volume
+
+            Go to *File System*
+
+                Click *Create*
+
+                    Select the scanned drive
+                    
+                    Type in label (e.g. data)
+
+                    Click *OK* (It will take a while)
+
+                Select the created device
+
+                    Click *Mount*
+
+                        Click *Apply*
+
+        #Create user
+
+            Go to *User*
+
+                Add user
+
+        #Create Shared folder
+
+            Go to *Shared Folders*
+
+                Click *Add*
+
+                    Provide the following:
+
+                        Name:
+
+                        Device:
+
+                        Path:
+
+                        Permissions:
+
+                    Click *Save*
+
+        #Create Share
+
+            Go to *SMB/CIFS* > *Shares*
+
+                Click *Add*
+
+                    Fill out the info
+
+                        Click *Save*
+
+            Go to *SMB/CIFS* > *Settings*
+
+                Enable
+
+                Click *Save*
