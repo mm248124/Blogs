@@ -49,6 +49,7 @@ redirect_from:
             # Select printer's make and model
             
             # Enable the Share This Printer box
+            
   __Client setup__
 
         # On client computer go to Printers & Scanners
