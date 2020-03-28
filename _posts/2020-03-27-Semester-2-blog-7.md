@@ -49,7 +49,7 @@ redirect_from:
             # Select printer's make and model
             
             # Enable the Share This Printer box
-            
+
   __Client setup__
 
         # On client computer go to Printers & Scanners
@@ -58,4 +58,6 @@ redirect_from:
 
             # Client computer will discover the printer
 
-                #Click Add Printer 
+                # Click Add Printer 
+
+            # In case client computer cannot discover printer, manually enter Raspberry Pi IP to setup your Printer
