@@ -13,6 +13,7 @@ redirect_from:
         Docker is a tool for creating, deploying, and running applications in containers. 
 
         Docker containers are lightweight, especially compared to virtual machines. This feature is especially valuable if you are a Raspberry Pi user.
+        
   __Basic setup__
 
         sudo su
