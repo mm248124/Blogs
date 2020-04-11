@@ -18,9 +18,7 @@ It automatically updates firewall to ban IP address associated with unusual acti
         
   __Basic setup__
 
-        sudo su
-
-        apt-get update && apt-get upgrade -y
+        sudo -i
 
         # Edit /etc/dhcpcd.conf to set static IP
 
@@ -28,7 +26,7 @@ It automatically updates firewall to ban IP address associated with unusual acti
 
   __Update and Upgrade__
 
-        apt-get update && sudo apt-get upgrade
+        apt-get update && apt-get upgrade -y
 
   __Download and Install Fail2ban on Raspberry Pi__
 
@@ -58,7 +56,7 @@ It automatically updates firewall to ban IP address associated with unusual acti
 
         banaction = iptables-multiport
 
-        #Additional actions can be found below location
+        #Additional ban actions can be found in below location
 
             /etc/fail2ban/action.d/
 
@@ -76,4 +74,3 @@ It automatically updates firewall to ban IP address associated with unusual acti
 
         service fail2ban restart
 
-  __How to Uninstall Docker on Your Raspberry Pi__
