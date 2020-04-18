@@ -98,7 +98,7 @@ Dynamic DNS points an easy to remember hostname to your dynamic IP address.
 
             [Service]
             # Start main service
-            ExecStart=/usr/local/bin/noip2
+            ExecStart=/usr/local/bin/noip
             Restart=always
             Type=forking
 
