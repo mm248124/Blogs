@@ -76,8 +76,6 @@ Dynamic DNS points an easy to remember hostname to your dynamic IP address.
             
             Do you wish to run something at successful update?[N] (y/N)
 
-
-
   __Run DUC as a service__
 
       # Create a service to run the DUC in background.
