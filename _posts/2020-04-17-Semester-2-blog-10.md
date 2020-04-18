@@ -82,9 +82,9 @@ Dynamic DNS points an easy to remember hostname to your dynamic IP address.
 
       # Create a service to run the DUC in background.
 
-            sudo vi /etc/systemd/system/noip2.service
+            sudo vi /etc/systemd/system/noip.service
 
-      # Paste below code into /etc/systemd/system/noip2.service file
+      # Paste below code into /etc/systemd/system/noip.service file
 
 
             [Unit]
@@ -104,12 +104,12 @@ Dynamic DNS points an easy to remember hostname to your dynamic IP address.
 
       # Enable the service to run after reboots:
       
-            sudo systemctl enable noip2
+            sudo systemctl enable noip
 
       # Start the service:
       
-            sudo systemctl start noip2
+            sudo systemctl start noip
 
       # Additionally you can see the status of the service by typing:
       
-            sudo service noip2 status
+            sudo service noip status
