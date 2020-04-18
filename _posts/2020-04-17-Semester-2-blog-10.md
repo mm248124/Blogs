@@ -32,9 +32,10 @@ Dynamic DNS points an easy to remember hostname to your dynamic IP address.
       
       # Your hostname will expire in 30 days.
 
-            # We need to setup Dynamic Update Client (DUC) to update IP address in case it changes. This client can be run on Windows/Mac?Linux
+            # We need to setup Dynamic Update Client (DUC) to update IP address in case it changes. This client can be run on Windows/Mac/Linux
 
                   # Instruction for Windows/Mac can be found under "Dynamic DNS" tab, "Dynamic Update Client"
+  
   __Basic setup__
 
         # Open terminal in Raspberry Pi
