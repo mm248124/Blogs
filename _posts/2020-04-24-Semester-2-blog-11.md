@@ -24,6 +24,22 @@ In this setup, Raspberry Pi will be a wireless access point & a router.
 
      systemctl stop hostapd dnsmasq
 
+     # In case you get error "hostapd.service is masked" run below commands
+
+            systemctl unmask hostapd
+            
+            systemctl enable hostapd
+
+            systemctl start hostapd
+
+            # Make sure it is running without error
+
+                  systemctl status hostapd
+
+            # Once confirmed it is running without errors, stop the service
+
+                  systemctl stop hostapd
+
   __Set a static IP for the wlan0 interface__
 
       # Edit file /etc/dhcpcd.conf
