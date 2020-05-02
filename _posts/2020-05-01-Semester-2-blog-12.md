@@ -10,7 +10,7 @@ redirect_from:
 
 ## Setup Webmin on Raspberry Pi
 
-In this setup, Raspberry Pi will be a wireless access point & a router.
+Webmin enables you to use web-based interface for system administration. No longer need to manually edit configuration files.
 
    __Basic setup__
 
