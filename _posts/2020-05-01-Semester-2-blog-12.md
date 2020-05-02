@@ -16,11 +16,11 @@ In this setup, Raspberry Pi will be a wireless access point & a router.
 
         # Open terminal in Raspberry Pi
         
-        sudo -i
+            sudo -i
 
         # Edit /etc/dhcpcd.conf to set static IP
 
-        reboot
+            reboot
  
   __Update and Upgrade__
 
@@ -32,9 +32,9 @@ In this setup, Raspberry Pi will be a wireless access point & a router.
       
             apt-get install perl libnet-ssleay-perl openssl libauthen-pam-perl libpam-runtime libio-pty-perl apt-show-versions python
 
-      # Find the Latest Version at the Website
+   # Find the Latest Version at the Website
 
-            Use this [Link](http://www.webmin.com/deb.html)
+   Use this [Link](http://www.webmin.com/deb.html)
       
       # Download the files
 
