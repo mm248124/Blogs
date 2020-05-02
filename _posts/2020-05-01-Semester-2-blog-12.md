@@ -57,3 +57,11 @@ In this setup, Raspberry Pi will be a wireless access point & a router.
       # Install the Updated Packages
 
             Install Now
+
+      # If you have multiple Raspberry Pis running Webmin, Create Cluster
+
+            Go to CLuster > Cluster Webmin Servers > Select Server > Add Server
+
+   # More Configuration Docs
+
+   Use This [link](https://doxfer.webmin.com/Webmin/Webmin_Modules)
